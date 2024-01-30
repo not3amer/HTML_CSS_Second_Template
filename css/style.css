@@ -23,6 +23,9 @@ body{
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 .continer{
     padding: 0 15px 0 15px;
     margin: 0 auto 0 auto;
@@ -82,9 +85,19 @@ ul{
 .main-heading p{
     width: 550px;
     max-width: 100%;
-    color: #a8a8a8;
+    color: #777;
     line-height: 2;
     margin: 0 auto 100px;
+}
+.btn{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 30px;
+    width: fit-content;
+    margin: auto;
+}
+.btn a:visited{
+    color: white;
 }
 /* End Componants */
 /* start header */
@@ -660,3 +673,98 @@ nav .toggle-menu{
     top: -15px;
     right: -8px;
 }
+/* End Our Skills */
+/* Start Quote */
+.quote{
+    padding: var(--section-padding) 0;
+    background-image: url();
+    background-color: #4c4c4c;
+}
+.quote q{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.quote p{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+/* End Quote */
+/* Start Pricing */
+.pricing{
+    padding: var(--section-padding) 0;
+}
+.boxes-continer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.boxes-continer .pricing-box{
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.boxes-continer .pricing-box .head{
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    padding: 40px 0;
+}
+.boxes-continer .pricing-box .head h3{
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.boxes-continer .pricing-box .head span{
+    font-weight: bold;
+    font-size: 60px;
+    position: relative;
+}
+.boxes-continer .pricing-box .head span::before{
+    content: "$";
+    position: absolute;
+    font-size: 30px;
+    font-weight: normal;
+    left: -20px;
+    top: -15px;
+}
+.boxes-continer .pricing-box .head span::after{
+    content: "/Mo";
+    font-size: 20px;
+    position: absolute;
+    right: -45px;
+    bottom: 8px;
+}
+.boxes-continer .pricing-box ul{
+    border-bottom: 1px solid var(--main-color);
+}
+.boxes-continer .pricing-box ul li{
+    padding: 20px 0;
+    position: relative;
+}
+.boxes-continer .pricing-box ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--main-color);
+    width: 50%;
+    height: 1px;
+}
+.boxes-continer .pricing-box ul li:last-child::after{
+    height: 0;
+}
+.foot a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border: 1px solid var(--main-color);
+}
+.pricing .continer > p{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+/* End Pricing */
