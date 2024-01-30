@@ -677,8 +677,22 @@ nav .toggle-menu{
 /* Start Quote */
 .quote{
     padding: var(--section-padding) 0;
-    background-image: url();
+    background-image: url(../images/quote.jpg);
+    background-size: cover;
     background-color: #4c4c4c;
+    position: relative;
+}
+.quote::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+.quote .continer{
+    position: relative;
 }
 .quote q{
     display: block;
